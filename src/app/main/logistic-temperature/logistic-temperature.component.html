@@ -1,0 +1,73 @@
+<div fxLayoutAlign="right center">
+    <div style="padding: 1%">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+    </div>
+
+    <div style="width: 50%; height: 50%; margin-left: 10%;">
+
+        <div style="margin-bottom: 15%;">
+            <mat-card style="background: rgb(76, 182, 49);  width: 100%; height: 15%;">
+                <div fxLayoutAlign=" center center ">
+                    <h2>
+                        Buena temperatura
+                    </h2>
+                </div>
+                <div fxLayoutAlign=" right right ">
+                    <p>
+                        -20° ^ -5°
+                    </p>
+                    <span class="example-spacer"></span>
+                    <button mat-icon-button class="example-icon " aria-label="Example icon-button with share icon ">
+                    <mat-icon>network_check</mat-icon>
+                    </button>
+                </div>
+            </mat-card>
+            <mat-card style=" width: 100%; height: 15%; ">
+                <mat-card-content fxLayoutAlign="center center ">
+
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div style="margin-bottom: 15%; ">
+            <mat-toolbar style="background: yellow; width: 100%; height: 15%; " fxLayoutAlign="center center ">
+                <p>
+                    Temperatura Media
+                </p>
+                <span class="example-spacer "></span>
+                <button mat-icon-button class="example-icon " aria-label="Example icon-button with share icon ">
+          <mat-icon>network_check</mat-icon>
+        </button> <br>
+            </mat-toolbar>
+            <mat-card style=" width: 100%; height: 15%; ">
+                <mat-card-content fxLayoutAlign="center center ">
+                    <p>
+                        -5° ^ -0°
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div style="margin-bottom: 15%; ">
+            <mat-toolbar style="background: red; width: 100%; height: 15%; " fxLayoutAlign="center center ">
+                <p>
+                    Temperatura en riesgo
+                </p>
+                <span class="example-spacer "></span>
+                <button mat-icon-button class="example-icon " aria-label="Example icon-button with share icon ">
+          <mat-icon>network_check</mat-icon>
+        </button> <br>
+            </mat-toolbar>
+            <mat-card style=" width: 100%; height: 15%; ">
+                <mat-card-content fxLayoutAlign="center center ">
+                    <p>
+                        -0° ^ ~
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>
